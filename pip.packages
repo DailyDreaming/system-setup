@@ -1,0 +1,14 @@
+matplotlib
+bs4
+virtualenv
+biopython
+flask
+jupyter
+jupyter_client
+ipython
+pandas
+numpy
+scipy
+scikit-learn
+boto
+khmer
