@@ -54,4 +54,7 @@ Install:
         cat hosts.txt >> /etc/hosts  # open and edit
 
  - Setup git-secrets
+ - Install Slack
+ - Install Zoom
+ - Import Firefox Bookmarks + Install Add-Ons
  
