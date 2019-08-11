@@ -52,3 +52,6 @@ Install:
 
         wget http://winhelp2002.mvps.org/hosts.txt
         cat hosts.txt >> /etc/hosts  # open and edit
+
+ - Setup git-secrets
+ 
