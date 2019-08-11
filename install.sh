@@ -53,7 +53,13 @@ cd ~/git
 
 wget https://releases.hashicorp.com/terraform/0.12.4/terraform_0.12.4_linux_amd64.zip
 unzip ./terraform_0.12.4_linux_amd64.zip -d /usr/local/bin/
+chmod +x /usr/local/bin/terraform
 rm  terraform_0.12.4_linux_amd64.zip
+
+# Install ecs-cli
+sudo curl -o /usr/local/bin/ecs-cli https://amazon-ecs-cli.s3.amazonaws.com/ecs-cli-linux-amd64-latest
+echo "$(curl -s https://s3.cn-north-1.amazonaws.com.cn/amazon-ecs-cli/ecs-cli-linux-amd64-latest.md5) /usr/local/bin/ecs-cli" | md5sum -c -
+chmod +x /usr/local/bin/ecs-cli
 
 # Install Google SDK
 # https://cloud.google.com/sdk/docs/quickstart-debian-ubuntu
