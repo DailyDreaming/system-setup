@@ -3,13 +3,15 @@
 Preinstall:
 
  - Update the Kernel: http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.16.2/
- - Enable Propriety Drivers from System Settings.
+ - Resolve any driver issues.
+   - Video card drivers rely on the kernel version, lightdm/gdm3, and Wayland Enabling
+   - Resolve any other driver issues
  - Reboot
 
 Install:
 
- - Run `install.sh`.
-
+ - Run `install_0.sh`.
+ - Assuming all went well, run `install_1.sh`.
  - Install tensorflow and cuda+ manually: https://www.tensorflow.org/install
  - Install mendeley manually: https://www.mendeley.com/download-desktop/
  - Install deadbeef manually: http://deadbeef.sourceforge.net/download.html
@@ -18,7 +20,6 @@ Install:
  - Configure codecs to get libdvdcss2:
 
         dpkg-reconfigure libdvd-pkg
-        sudo apt install -y libdvdcss2
 
  - Configure git:
 

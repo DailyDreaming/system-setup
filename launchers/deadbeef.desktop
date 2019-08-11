@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=DeadBeef
+Icon=/opt/deadbeef/deadbeef.png
+Exec="/opt/deadbeef/deadbeef" %f
+Comment=Fucking With Bash Scripts Since 2000
+Categories=Development;IDE;
+Terminal=false
+StartupWMClass=jetbrains-pycharm
