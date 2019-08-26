@@ -104,7 +104,6 @@ m4-doc
 maven
 mercurial
 mysql-server
-ncat
 ncbi-blast+
 ncurses-doc
 ndiff
@@ -115,7 +114,6 @@ openjdk-11-source
 pkg-config
 postgresql
 postgresql-doc
-postgresql-doc-11
 protobuf-compiler
 python-crypto-doc
 python-cryptography-doc
@@ -135,7 +133,6 @@ python-setuptools-doc
 python-six
 python-tk
 python-virtualenv
-python2-doc
 python2.7-doc
 python3-dev
 python3-pip
@@ -183,3 +180,9 @@ vlc
 wget
 zenmap
 zip
+build-essential
+libncurses-dev
+bison
+flex
+libssl-dev
+libelf-dev

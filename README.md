@@ -3,6 +3,8 @@
 Preinstall:
 
  - Update the Kernel: http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.16.2/
+   - `sudo dpkg -i *.deb`
+   - `uname -r`
  - Resolve any driver issues.
    - Video card drivers rely on the kernel version, lightdm/gdm3, and Wayland Enabling
    - Resolve any other driver issues

@@ -27,8 +27,8 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt update
 sudo apt-cache policy docker-ce
 sudo apt install -y docker-ce
-sudo usermod -aG docker ${USER}
-su - ${USER}
+# sudo usermod -aG docker ${USER}
+# su - ${USER}
 
 # Install Pycharm
 # https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=linux
@@ -36,7 +36,7 @@ wget https://download-cf.jetbrains.com/python/pycharm-professional-2019.2.tar.gz
 sudo tar xf pycharm-professional-2019.2.tar.gz -C /opt/
 cd /opt/pycharm-2019.2/bin
 sudo sh /opt/pycharm-2019.2/bin/pycharm.sh
-sudo cp ~/git/pycharm.desktop /usr/share/applications/pycharm.desktop
+sudo cp ~/git/system-setup/launchers/pycharm.desktop /usr/share/applications/pycharm.desktop
 cd ~/git
 
 # Install Terraform
