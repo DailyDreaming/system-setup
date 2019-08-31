@@ -42,6 +42,7 @@ gir1.2-gnomekeyring-1.0
 git
 gnu-standards
 golang-go
+gparted
 gstreamer1.0-plugins-bad
 gstreamer1.0-plugins-ugly
 gstreamer1.0-vaapi-doc
