@@ -40,10 +40,10 @@ sudo cp ~/git/system-setup/launchers/pycharm.desktop /usr/share/applications/pyc
 cd ~/git
 
 # Install Terraform
-wget https://releases.hashicorp.com/terraform/0.12.4/terraform_0.12.4_linux_amd64.zip
-unzip ./terraform_0.12.4_linux_amd64.zip -d /usr/local/bin/
+wget https://releases.hashicorp.com/terraform/0.12.6/terraform_0.12.6_linux_amd64.zip
+unzip ./terraform_0.12.6_linux_amd64.zip -d /usr/local/bin/
 sudo chmod +x /usr/local/bin/terraform
-rm  terraform_0.12.4_linux_amd64.zip
+rm  terraform_0.12.6_linux_amd64.zip
 
 # Install ecs-cli
 sudo curl -o /usr/local/bin/ecs-cli https://amazon-ecs-cli.s3.amazonaws.com/ecs-cli-linux-amd64-latest

@@ -186,3 +186,4 @@ bison
 flex
 libssl-dev
 libelf-dev
+moreutils
