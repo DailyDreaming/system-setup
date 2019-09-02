@@ -22,22 +22,6 @@ def heredoc(template, indent=''):
 
 
 def main(argv=sys.argv[1:]):
-    parser = argparse.ArgumentParser(description=heredoc("""
-        Switches AWS Credentials.
-
-        Options:
-         - hca-dev
-         - hca-prod
-         - toil
-         - toil-mfa (MFA)
-         - platform-dev (MFA)
-        """), formatter_class=argparse.RawTextHelpFormatter)
-    parser.add_argument('account', help='Name of the account.')
-    o = parser.parse_args(argv)
-
-    main_config = os.path.expanduser('~/.aws/config')
-    main_credentials = os.path.expanduser('~/.aws/credentials')
-
     accounts = {'hca-dev': {'config': os.path.expanduser('~/.aws/CONFIG-hca-dev'),
                             'credentials': os.path.expanduser('~/.aws/CRED-hca-id')},
 
@@ -52,6 +36,22 @@ def main(argv=sys.argv[1:]):
 
                 'platform-dev': {'config': os.path.expanduser('~/.aws/CONFIG-mfa-platform-dev'),
                                  'credentials': os.path.expanduser('~/.aws/CRED-gi-gateway')}}
+
+    parser = argparse.ArgumentParser(description=heredoc("""
+        Switches AWS Credentials.
+
+        Options:
+         - hca-dev
+         - hca-prod
+         - toil
+         - toil-mfa (MFA)
+         - platform-dev (MFA)
+        """), formatter_class=argparse.RawTextHelpFormatter)
+    parser.add_argument('account', choices=list(accounts), help='Name of the account.')
+    o = parser.parse_args(argv)
+
+    main_config = os.path.expanduser('~/.aws/config')
+    main_credentials = os.path.expanduser('~/.aws/credentials')
 
     config, credentials = accounts[o.account]['config'], accounts[o.account]['credentials']
     if not os.path.exists(config) or not os.path.exists(credentials):
