@@ -66,6 +66,7 @@ libcommons-logging-java
 libdvd-pkg
 libdvdnav4
 libdvdread4
+libffi-dev
 libfftw3-bin
 libfftw3-dev
 libgfortran5-dbg
@@ -110,6 +111,7 @@ ncurses-doc
 ndiff
 ninja-build
 nmap
+nodejs
 openjdk-11-demo
 openjdk-11-source
 pkg-config
@@ -148,6 +150,7 @@ r-doc-pdf
 r-mathlib
 readline-doc
 ri
+rsync
 ruby-dev
 serdi
 sgml-base-doc
