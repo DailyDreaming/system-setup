@@ -30,3 +30,5 @@ ppjson() { cat "$1" | jq ''; }
 git-diff() { git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative origin/$1..origin/$2; }
 gs-json() { python3 /usr/local/bin/gs_json.py "$1"; }
 switch() { python3 /usr/local/bin/switch.py "$1"; }
+switch-terraform() { wget https://releases.hashicorp.com/terraform/${1}/terraform_${1}_linux_amd64.zip && sudo unzip ./terraform_${1}_linux_amd64.zip -d /usr/local/bin/ && sudo chmod +x /usr/local/bin/terraform && sudo rm terraform_${1}_linux_amd64.zip && terraform version; }
+h() { history | grep "$1"; }
