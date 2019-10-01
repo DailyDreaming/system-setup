@@ -79,5 +79,9 @@ sudo gsettings set org.gnome.nautilus.icon-view default-zoom-level 'small'
 sudo cp ~/git/system-setup/bin/switch.py /usr/local/bin/switch.py
 sudo cp ~/git/system-setup/bin/gs_json.py /usr/local/bin/gs_json.py
 
+# Specifically for PyCharm
+echo "fs.inotify.max_user_watches = 524288" | sudo tee /etc/sysctl.d/idea.conf
+sudo sysctl -p --system
+
 # Update Everything One Final Time
 sudo apt update && sudo apt -y upgrade && sudo apt -y dist-upgrade
