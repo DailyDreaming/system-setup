@@ -9,6 +9,7 @@ alias heptio-authenticator-aws='aws-iam-authenticator '
 # https://wikileaks.org/ciav7p1/cms/page_1179773.html
 alias gitfix='git commit --amend -C HEAD'
 alias daily-quote='python3 /usr/local/bin/quote_of_the_day.py | lolcat'
+alias find-caps="grep  -H -roIP '\b[A-Z0-9_]*[A-Z]+[A-Z0-9_]*\b' ."
 
 # toil
 alias gittoil='git clone https://github.com/DataBiosphere/toil.git'
