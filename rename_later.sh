@@ -6,7 +6,6 @@ sudo apt-get autoremove
 sudo apt-get autoclean
 sudo apt-get remove dbconfig-php
 sudo apt-get dist-upgrade
-Note: The output of the below command will provide you with information the installed package software, version, architecture and short description about the package. grep command is used to find the PHP package
 sudo dpkg --get-selections | grep php | cut -f 1
 sudo apt-get remove --purge <package name from the previous command output>
 sudo whereis php
@@ -17,7 +16,6 @@ sudo rm -rf <directory/file path from the previous command output>
 sudo service apache2 stop
 sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
 sudo apt-get autoremove
-The output of the below command will provide you with information the installed package software, version, architecture and short description about the package. grep command is used to find the MySQL package
 sudo dpkg --get-selections | grep apache | cut -f 1
 sudo apt-get remove --purge <package name from the previous command output>
 sudo whereis apache
@@ -31,7 +29,6 @@ sudo apt-get autoremove.
 sudo apt-get autoclean.
 sudo apt-get remove dbconfig-php.
 sudo apt-get dist-upgrade.
-The output of the below command will provide you with information the installed package software, version, architecture and short description about the package. grep command is used to find the MySQL package
 sudo dpkg --get-selections | grep mysql | cut -f 1
 sudo apt-get remove --purge <package name from the previous command output>
 sudo whereis mysql
