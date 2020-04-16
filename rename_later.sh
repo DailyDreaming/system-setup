@@ -14,7 +14,7 @@ sudo rm -rf <directory/file path from the previous command output>
 # uninstall Apache
 
 sudo service apache2 stop
-sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
+sudo apt-get purge apache*
 sudo apt-get autoremove
 sudo dpkg --get-selections | grep apache | cut -f 1
 sudo apt-get remove --purge <package name from the previous command output>
