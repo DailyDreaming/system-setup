@@ -9,6 +9,6 @@ mkdir ~/.credentials
 sudo rm -rf ~/examples.desktop
 
 # Update Everything
-sudo apt update && sudo apt -y upgrade && sudo apt -y dist-upgrade
+sudo apt-get update && sudo apt-get -y upgrade && sudo apt-get -y dist-upgrade
 # Install Apt Packages
-sudo apt install -y $(awk '{print $1'} ~/git/system-setup/apt.packages)
+sudo apt-get install -y $(awk '{print $1'} ~/git/system-setup/apt.packages)
