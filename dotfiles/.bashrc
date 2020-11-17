@@ -118,12 +118,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# ignore the PS1 fiddling based on deprecated nonsense above this; we're ubuntu 18.04 damn it
 export PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\] \[\033[00;33m\]\@\[\033[00m\] \[\033[01;34m\]\w\[\033[00m\]\$ "
 
 # Eternal bash history.
 # ---------------------
-# Undocumented feature which sets the size to "unlimited".
 # http://stackoverflow.com/questions/9457233/unlimited-bash-history
 export HISTFILESIZE=-1
 export HISTSIZE=-1
@@ -135,9 +133,7 @@ export HISTFILE=~/.bash_eternal_history
 # http://superuser.com/questions/20900/bash-history-loss
 PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
-# backup filename only records the day, so is overwritten if and only if same day
-# these should be, eventually, MANUALLY, cleaned up
-BACKUP=$HISTFILE.backup.$(date +%F)
+BACKUP=/home/quokka/history_backups/$(basename $HISTFILE).backup
 if [ -s "$HISTFILE" -a "$HISTFILE" -nt "$BACKUP" ]; then
   # history file is newer then backup
   cp -f $HISTFILE $BACKUP
