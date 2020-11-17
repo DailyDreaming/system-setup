@@ -133,7 +133,7 @@ export HISTFILE=~/.bash_eternal_history
 # http://superuser.com/questions/20900/bash-history-loss
 PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
-BACKUP=/home/quokka/history_backups/$(basename $HISTFILE).backup
+BACKUP=~/history_backups/$(basename $HISTFILE).backup
 if [ -s "$HISTFILE" -a "$HISTFILE" -nt "$BACKUP" ]; then
   # history file is newer then backup
   cp -f $HISTFILE $BACKUP
