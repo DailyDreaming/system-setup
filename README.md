@@ -58,6 +58,6 @@ Install:
 
  - Setup git-secrets
  - Install Slack
- - Install Zoom
+ - Install Zoom + Profile Avatar
  - Import Firefox Bookmarks + Install Add-Ons
  
