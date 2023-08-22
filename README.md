@@ -60,4 +60,4 @@ Install:
  - Install Slack
  - Install Zoom + Profile Avatar
  - Import Firefox Bookmarks + Install Add-Ons
- 
+ - sudo dpkg-reconfigure -plow unattended-upgrades
